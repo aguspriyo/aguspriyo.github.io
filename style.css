@@ -15,3 +15,213 @@ section {
 #gallery .row > * {
   padding: 0;
 }
+
+/* my cat section */
+.cat-box{
+  position: relative;
+  background-color: #b1b6c5;
+  border-radius: 10px;
+  height: 550px;
+transform-style: preserve-3d;  
+
+}
+.cat-box1{
+  position: relative;
+  background-color: #91c2a1;
+  border-radius: 10px;
+  height: 550px;
+transform-style: preserve-3d;  
+
+}
+
+.cat-box1::before{
+  content: 'MY';
+  position: absolute;
+  color: white;
+  font-size: 6em;
+  font-weight: bold;
+  font-style: italic;
+  top: 43px;
+  left:50%;
+  opacity: 0;
+  transition: 0.5s;
+  
+}
+
+.cat-box1:hover::before{
+ 
+  opacity: 0.2;
+}
+
+
+.cat-box2{
+  position: relative;
+  background-color: #a0a374;
+  border-radius: 10px;
+  height: 550px;
+transform-style: preserve-3d;  
+}
+.cat-box2::before{
+  content: 'MY';
+  position: absolute;
+  color: white;
+  font-size: 6em;
+  font-weight: bold;
+  font-style: italic;
+  top: 43px;
+  left:50%;
+  opacity: 0;
+  transition: 0.5s;
+  
+}
+.cat-box2:hover::before{
+
+  opacity: 0.2;
+}
+
+
+.cat-box::before{
+  content: 'MY';
+  position: absolute;
+  color: white;
+  font-size: 6em;
+  font-weight: bold;
+  font-style: italic;
+  top: 43px;
+  left:50%;
+  opacity: 0;
+  transition: 0.5s;
+  
+}
+
+.cat-box:hover::before{
+ 
+  opacity: 0.2;
+}
+
+.cat-box::after{
+  content: 'CATS';
+  position: absolute;
+  color: white;
+  font-size: 4em;
+  font-weight: bold;
+  font-style: italic;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+  
+}
+.cat-box1::after{
+  content: 'CATS';
+  position: absolute;
+  color: white;
+  font-size: 4em;
+  font-weight: bold;
+  font-style: italic;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+  
+}
+.cat-box2::after{
+  content: 'CATS';
+  position: absolute;
+  color: white;
+  font-size: 4em;
+  font-weight: bold;
+  font-style: italic;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+  
+}
+
+
+.cat-box:hover::after{
+  
+  opacity: 0.2;
+}
+.cat-box1:hover::after{
+  
+  opacity: 0.2;
+}
+.cat-box2:hover::after{
+  
+  opacity: 0.2;
+}
+
+
+.cat-name{
+  position: absolute;
+  color: #fff;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transform: translate3d(0,0,50px);
+  transition: 0.5s;
+}
+
+.cat-box:hover .cat-name{
+top: 30px;
+opacity: 1;
+}
+.cat-box1:hover .cat-name{
+top: 30px;
+opacity: 1;
+}
+.cat-box2:hover .cat-name{
+top: 30px;
+opacity: 1;
+}
+.cat-detail-button{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.cat-box:hover .cat-detail-button{
+  opacity: 1;
+  bottom: 20px;
+}
+.cat-box1:hover .cat-detail-button{
+  opacity: 1;
+  bottom: 20px;
+}
+.cat-box2:hover .cat-detail-button{
+  opacity: 1;
+  bottom: 20px;
+}
+
+
+
+.cat-img{
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate3d(-50%, -52%, 100px);
+  max-width: 350px;
+  transition: 0.5s;
+}
+
+.cat-box:hover .cat-img{
+ transform: translate3d(-50%, -52%,80px) rotate(5deg)
+ scale(1.2); 
+}
+.cat-box1:hover .cat-img{
+ transform: translate3d(-50%, -52%,80px) rotate(5deg)
+ scale(1.2); 
+}
+.cat-box2:hover .cat-img{
+ transform: translate3d(-50%, -52%,80px) rotate(5deg)
+ scale(1.2); 
+}
